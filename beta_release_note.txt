@@ -1,0 +1,194 @@
+[4.8.8 beta 67]
+1. Now "Create With Current Map Folder" option will copy everything   
+2. Add "case" text display in "Property Setting Window"
+3. Remove unnecessary cv2 import in "Virtual Wall Edit Mode"
+
+[4.8.8 beta 66]
+1. Fix "Scheduled GO CHARGING not work" issue
+2. Now items and functional map can move with "Moving Map" function in "Raw Map Edit Mode"
+3. "SetDrone" now has angle input
+
+[4.8.8 beta 65]
+1. Add "Debug Image" -> "Save" to "Logger" menu on top
+
+[4.8.8 beta 64]
+1. AMR will not do auto back charging station behavior if AMR is not matched the paired floor
+2. Fix "amr_list.json" the copy in FMS folder fromat error
+
+[4.8.8 beta 63]
+1. Fix "Auto back to charge station" sometimes not work issue
+2. No assigned AMR mission will not choose the AMR is being paused work when "Hyper task manager" is enabled
+3. Fix crash when uploading empty sound file
+
+[4.8.8 beta 62]
+1. Improve HTTP Resfful API - "/set_mission"
+
+[4.8.8 beta 61]
+1. Extend timeout from 2.0 -> 5.0 in device.py
+2. Fix "Mission with robot name proccesong order is wrong issue"
+3. Make rotating log (core.log) single file size smaller
+4. Fix "Sometimes mission assigned crash" issue
+5. Fix "Mission handle memory leak" issue
+
+[4.8.8 beta 60]
+PS. Pass, not existed
+
+[4.8.8 beta 59]
+1. Fix "FMS/RCS crash if AMR IP is cannot be connected"
+2. Now the "start_time" in "set_mission" API can be set as -1 to start the mission immediately
+
+[4.8.8 beta 58]
+1. Fix "Critical crash issue: error index using"
+
+[4.8.8 beta 57]
+1. Fix "Unhandled Mission Fail" issue
+2. Fix "LOW_BATTERY charging behavior is not triggered" issue
+3. Fix "Sometimes mission is not considered as END" issue
+4. Fix "FMS/RCS stop working when core.log file size is over 1GB" issue
+
+[4.8.8 beta 56]
+1. Improve "Auto Back to Charge Station" mechanic
+
+[4.8.8 beta 55]
+1. Fix the core.log single file's maximium size error (1T -> 1G)
+2. Fix "Unhandled Python Exception crashed because of Parallel Computing" issue 
+
+[4.8.8 beta 54]
+1. Fix "Mission Script is not uploaded completely to AMR" issue
+2. Fix "AMR go back to charge station by low battery will be assigned mission" issue
+3. Fix "Same mission is assigned to different robot at same time" issue
+4. RCS will not trigger traffic function when clicking start mission now
+
+[4.8.8 beta 53]
+1. Fix "Sometimes cannot auto back charging station" issue
+
+[4.8.8 beta 52]
+1. Fix "Same mission will assigned to 2 different AMR" issue
+
+[4.8.8 beta 51]
+1. Fix "Show Range Detail" blinking when AMR are more than one issue
+2. Fix "AMR Name Error when getting mission without given robot name" issue
+3. Fix "No AMR mission start without assigned order" issue
+4. Fix "No name mission cannot be deleted after clicking 'Mission Stop Manager' button" issue
+5. Fix "Repeat 'DockTo' mission assigned when triggering auto back behavior" issue
+6. Error message box will pump out when clicking "Save" and "Load" button in "Raw Map Edit Mode" without map folder name
+7. Improve AMR connection process
+8. Core log will be pushed out to log file and terminal at the same time
+9. No robot name mission will choose the nearest AMR from start position to assign
+
+[4.8.8 beta 50]
+PS. Pass, not existed
+
+[4.8.8 beta 49]
+1. Fix "Wrong step to redo when WIFI is disconnected" issue
+2. Fix "Reset (or Recover) function not work when it is triggered at once" issue
+3. Add "Hover AMR icon to show name function" & "Click AMR icon to change AMR function"
+4. Improve rail icons on the map in "Rail Edit Mode"
+5. Fix "Error redo not working when error, pasue and resume triggered almost at same time" issue
+6. Fix "No retry mission when mission cannot start" issue
+7. Now FMS will update the modified traffic network rail when clicking "Save" in "Rail Edit Mode"
+   (Only the rail already added into traffic network will be updated)
+
+8. Fix "DockTo" and "PlaySound" mission step parsing crash in some situtation
+9. Fix traffic network rail index over range issue
+10. Fix "Saving repeat without action issue" in "Rail Edit Mode"
+11. All terminal log will save to 'log\core.log'
+
+
+[4.8.8 beta 48]
+1. Fix mission state jump from "Running" to "Error" so fast issue
+2. Extent "PatternDockTo" mission step - We can set the rack size at the end now
+   ["PatternDockTo",["Center","Front",0,0.6,0.2,0.1],[0.90, 0.88, 0.6, 0.83]]
+   
+   [0.90, 0.88, 0.6, 0.83]
+   0.90 -> Rack Length
+   0.88 -> Rack Width
+   0.6  -> Rack Height
+   0.83 -> Pattern to Most Front
+   
+3. Add "Show Range Detail" function to "View" menu
+   
+
+[4.8.8 beta 47]
+1. Fix "FMS no send mission and no recover error" issue
+2. Fix "DockTo" no error retry issue
+3. Fix the "Miscrosoft Outlook" cease FMS/RCS startup process issue
+4. Fix "MoveTo_TrafficNetwork" cannot work when map's floor is being set
+
+[4.8.8 beta 46]
+1. Now ai_error greater than zero does not block connection anymore
+2. Fix "allow_num_ref_list" variable initialize error in "Traffic Edit Mode"
+3. Fix "MoveTo_TrafficNetwork" final position not correct issue
+4. Fix crash when mission step format is wrong sometimes
+
+[4.8.8 beta 45]
+1. Fix "Number Restrict Zone" loading not correct issue in "Traffic Edit Mode" (100%)
+2. Try to fix "State Machine - Running Mission State Cannot Exit" issue (1%)
+3. Add more resolution options to map creation
+4. Update map resolution selection GUI
+
+[4.8.8 beta 44]
+1. Fix "FMS stuck during connecting AMR" issue in MONITOR_MODE because emergency fix for map status code
+
+[4.8.8 beta 43]
+1. Fix "FMS stuck during connecting AMR" issue in MONITOR_MODE because emergency fix for map status code
+
+PS. CRASH, SO CANNOT FOUND IN DIRECTORY
+
+[4.8.8 beta 42]
+1. Emergency fix for map status code change
+
+PS. CRASH, SO CANNOT FOUND IN DIRECTORY
+
+[4.8.8 beta 41]
+1. Fix center position (green start) not correct issue when the map resolution is 5 cm/pixel
+2. Add show rail safety area switch in view
+3. Now "AMR restricetion area" is rotatable now in "Traffic Edit Mode"
+4. Fix "UVC Opening" & "Joystick Plugged" warning display abnormally issue
+
+[4.8.8 beta 40]
+1. Extend "ExtraPresetCmd" bond to mission step name (or function name in Script.py)
+2. Add new mission step - "DockTo_Leave"
+        ["DockTo_Leave", ["Front", 0.5]],
+        ["DockTo_Leave"]
+3. Add extra_cmd support for assigned pattern type and number
+4. Fix dock_plug_offset cannot be set issue in device.py
+5. Fix rotate & moving map at same time not correct issue
+6. Fix "ButtonWait" mission step cannot work with "MoveTo_TrafficNetwrok" step issue 
+
+[4.8.8 beta 39]
+1. Fix traffic pp crash in beta 38
+
+[4.8.8 beta 38]
+1. Fix "Connect by Config" crash in beta 37
+
+[4.8.8 beta 37]
+1. Add new ai info translation - "Scan"(32)
+2. Fix FMS startup stuck issue when ai status is not "Stop"(19)
+3. Add new func - "scan" to device.py
+4. Improve "debug_SensorDisplayOption" function in device.py
+5. Fix "Cannot open FMS" issue when memory is not enough
+
+
+[4.8.8 beta 36]
+PS. Pass, not existed
+
+
+[4.8.8 beta 35]
+1. Fix the startup crash issue (Issue #1449)
+
+
+[4.8.8 beta 34]
+1. Fix "Add Dock By Charging Station" position not changed by size issue (Issue #1364)
+2. Add green star at center of AMR to let user know where AMR center position is
+3. Add new ai_info text - (958, "Dock - Obstacle Between Goal")
+4. Fix library name typo error in requirements.txt
+
+PS. CRASH, SO CANNOT FOUND IN DIRECTORY
+
+
+[4.8.8 beta 33]
+1. Reduce the UNEXPECTED_END popped out freqency
+2. Fix "wmic is not found issue" in 'Launch_In_...' batch file
+3. Improve display of status text
+4. Add version limit of 'brcypt' and 'cryptography' to requirements.txt
