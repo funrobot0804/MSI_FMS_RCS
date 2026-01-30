@@ -1,3 +1,9 @@
+[4.8.8 beta 69]
+1. Fix the crash issue when path length 0 track is inside
+
+[4.8.8 beta 68]
+1. Fix HTTP Restful API - "/cancel_mission_by_robot" not worked issue
+
 [4.8.8 beta 67]
 1. Now "Create With Current Map Folder" option will copy everything   
 2. Add "case" text display in "Property Setting Window"
