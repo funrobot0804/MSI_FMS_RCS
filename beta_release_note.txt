@@ -1,3 +1,8 @@
+[4.8.8 beta 70]
+1. Add direction arrow to "Show (All) Rail" function
+2. Target and dock text label will be more clearly when zooming in the map
+3. Now FMS supporting the extreme high resolution (0.005 m/grid)
+	
 [4.8.8 beta 69]
 1. Fix the crash issue when path length 0 track is inside
 
