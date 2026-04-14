@@ -1,3 +1,27 @@
+[4.8.8 beta 77]
+1. More stable method to get date info in batch file
+2. Back home no mission period time is more correct right now
+3. Much safer mechanic for "ainame_change_checker" function in Script.py
+
+[4.8.8 beta 76]
+PS. Pass, not existed
+
+[4.8.8 beta 75]
+1. Now the missions with start time close in 10 secs will run in the order of task index
+2. Improve the code of dealing the Exception and file open
+
+[4.8.8 beta 74]
+1. Fix port create so many and so frequently issue in "device.py" and "flask.py"
+
+[4.8.8 beta 73]
+1. Fix FMS crash issue when modbus type mission step format error
+
+[4.8.8 beta 72]
+1. Fix missions are not running in order issue
+
+[4.8.8 beta 71]
+1. Make AMR mission process speed faster
+
 [4.8.8 beta 70]
 1. Add direction arrow to "Show (All) Rail" function
 2. Target and dock text label will be more clearly when zooming in the map
