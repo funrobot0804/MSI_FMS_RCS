@@ -1,3 +1,13 @@
+[4.8.8 beta 78]
+1. Fix "5mm map MoveTo_TrafficNetwork generate length 1 rail" issue
+2. Add new Restful API - "/check_on_point"
+Given the target and the dock name to check whether AMR is on target or not
+
+3. Add "group" param to Http Restful API - "/set_mission" 
+Missions with the same group will be finished at first before going back to charge station
+
+4. Improve error notify of mission step format error
+
 [4.8.8 beta 77]
 1. More stable method to get date info in batch file
 2. Back home no mission period time is more correct right now
