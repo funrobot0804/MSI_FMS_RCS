@@ -1,3 +1,25 @@
+[4.8.8 beta 80]
+1. Fix "MoveTo_TrafficNetwork" not working in CONSTRUCTOR MODE
+2. Add time and period log to QMissionV2 for tracking time cost
+3. Add "RTSP Viewer" and "Virtual Joystick" window GUI
+4. Add "Download Mission Log" button to "PropertySettingWindow"
+
+[4.8.8 beta 79]
+1. Fix "No assigned robot name mission will cause crash" from previous version
+2. Fix GUI displaying issue when target and dock have the same name
+3. Now mission with the same group will be assigned to the same AMR if no assigned robot name in the mission
+4. Pause then continue can be started from any mission step
+5. Add new continue menu - "continue from original step (TRN)"
+   Now can choose the "traffic network" step as continue point
+   
+6. Now FMS will check whether AMR traffic managing function is alive when AMR reconnected from WiFI
+7. We can see full mission steps in left "Status" context window now
+8. Add "Remote Control" button to "Common Tool Widget"
+9. "Turn Off UV" button is set to disable as default now
+
+10. Add "Interrupt" in right-click mission control menu of GUI
+   (Now AMR can be interrupted during the mission, AMR can be moved by remote joystick)
+
 [4.8.8 beta 78]
 1. Fix "5mm map MoveTo_TrafficNetwork generate length 1 rail" issue
 2. Add new Restful API - "/check_on_point"
