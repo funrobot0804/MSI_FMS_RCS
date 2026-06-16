@@ -1,3 +1,12 @@
+[4.8.8 beta 81]
+1. Fix issue - "MovingTest" (in CONSTRUCT MODE) not working when there is floor paired
+2. Fix issue - Last SPACE(" ") in AI command of a rail will cause mission script would not be transmitted completely
+3. Add FMS version log when FMS is started
+4. Add AMR FW version log when AMR is connected to FMS
+5. Update requirements.txt for new library opencv
+
+!!!IMPORTANT!!! Please connect to internet and run "Upgrade.bat"
+
 [4.8.8 beta 80]
 1. Fix "MoveTo_TrafficNetwork" not working in CONSTRUCTOR MODE
 2. Add time and period log to QMissionV2 for tracking time cost
