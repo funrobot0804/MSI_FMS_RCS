@@ -1,3 +1,9 @@
+[4.8.8 beta 82]
+1. Fix issue - "Mission Manager STOP" crash with "TypeError: 'NoneType' object is not iterable" in "HyperTaskManager.py" (cancelJobAll/cancelJobFullAll) when "get_unfinish_mission_list" returns None (Flask not reachable); now skip safely
+2. Fix issue - "RuntimeError: wrapped C/C++ object of type QLabel has been deleted" in "TotalRobotWidget.py" when the all-robot view is rebuilt while a periodic Update touches a deleted SimpleRobotWidget; now skip deleted widgets instead of crashing
+    
+!!!IMPORTANT!!! Please connect to internet and run "Upgrade.bat"
+
 [4.8.8 beta 81]
 1. Fix issue - "MovingTest" (in CONSTRUCT MODE) not working when there is floor paired
 2. Fix issue - Last SPACE(" ") in AI command of a rail will cause mission script would not be transmitted completely
