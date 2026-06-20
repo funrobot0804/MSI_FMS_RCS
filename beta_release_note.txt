@@ -1,3 +1,8 @@
+[4.8.8 beta 83]
+1. Fix issue - log reading from AMR sometimes crash
+
+!!!IMPORTANT!!! Please connect to internet and run "Upgrade.bat"
+
 [4.8.8 beta 82]
 1. Fix issue - "Mission Manager STOP" crash with "TypeError: 'NoneType' object is not iterable" in "HyperTaskManager.py" (cancelJobAll/cancelJobFullAll) when "get_unfinish_mission_list" returns None (Flask not reachable); now skip safely
 2. Fix issue - "RuntimeError: wrapped C/C++ object of type QLabel has been deleted" in "TotalRobotWidget.py" when the all-robot view is rebuilt while a periodic Update touches a deleted SimpleRobotWidget; now skip deleted widgets instead of crashing
